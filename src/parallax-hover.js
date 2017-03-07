@@ -65,8 +65,8 @@ export default class ParallaxHover extends React.Component {
     this.state = {
       rotateX: 0,
       rotateY: 0,
-      shadowMovement: 20,
-      shadowSize: 50,
+      shadowMovement: 0,
+      shadowSize: 0,
       scale: 1,
       angle: 0,
       alpha: 0
@@ -130,7 +130,7 @@ export default class ParallaxHover extends React.Component {
   }
 
   __handleMouseLeave() {
-    this.__buildState(0, 0, 20, 50, 1, 0, 0);
+    this.__buildState(0, 0, 0, 0, 1, 0, 0);
   }
 
   __renderChildren(children) {
@@ -170,7 +170,9 @@ export default class ParallaxHover extends React.Component {
     });
 
     const stylesShadow = Object.assign({}, styles.phShadow(), baseTransforms, {
-      boxShadow: `0px ${st.shadowMovement}px ${st.shadowSize}px rgba(0, 0, 0, 0.6)`
+      boxShadow: `0px ${st.shadowMovement}px ${st.shadowSize}px rgba(0, 0, 0, 0.6)`,
+      borderRadius: 10,
+      border: `1px solid #e1e1e1`
     });
 
     const stylesLighting = Object.assign({}, styles.phLighting(), baseTransforms, {
