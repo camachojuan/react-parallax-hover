@@ -1,17 +1,15 @@
 #Parallax Hover React Component
-Inspired by @drewwilson’s [atvImg](https://github.com/drewwilson/atvImg), ported to React. Allows for non image based layers. Currently only supports mouse events. 
-
-Pull requests and suggestions more than welcome :]
+This is a fork of https://github.com/tylerk/react-parallax-hover
+It has two differences with it:
+* It has no shadow when not being hovered
+* It has a gray border with rounded corners when not being hovered
 
 ### Install
-`npm install --save react-parallax-hover`
-
-### Demo
-http://codepen.io/TylerK/full/Gpdqqq
+`npm install --save react-parallax-hover-with-borders`
 
 ### Run the example locally
 ```
-git clone https://github.com/tylerk/react-parallax-hover/
+git clone https://github.com/kebirek/react-parallax-hover
 cd react-parallax-hover
 npm install
 npm start
@@ -26,9 +24,3 @@ import ParallaxHover from 'react-parallax-hover';
     <div ref='text'>Some text</div>
 </ParallaxHover>
 ```
-
-### TODOs
-- [ ] More robust configuration
-- [ ] Touch event handling
-- [ ] Github pages site with examples and demo's
-- [ ] Animated gif hotness for this readme
