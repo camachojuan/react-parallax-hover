@@ -3,7 +3,7 @@
   "version": "0.3.1",
   "repository": {
     "type": "git",
-    "url": "https://github.com/TylerK/react-parallax-hover.git"
+    "url": "https://github.com/kebirek/react-parallax-hover.git"
   },
   "keywords": [
     "react",
@@ -21,7 +21,7 @@
     "prepublish": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Tyler Kelley <tylerckelley@gmail.com>",
+  "author": "Juan Camacho <camachojuan@gmail.com>",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer-loader": "^3.1.0",
